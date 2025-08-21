@@ -74,18 +74,14 @@ mim install -v -e .
 Train the model using the provided configuration:
 ```bash
 python tools/train.py own/yolov8s_car.py
-```
 
-### Training
-```bash
 # Train with specific GPU
 CUDA_VISIBLE_DEVICES=0 python tools/train.py own/yolov8s_car.py 
 ```
 
 ### Test
 ```bash
-# Single image inference
-python tools/test.py own/yolov8s_car.py  checkpoint --show-dir show_results
+python tools/test.py own/yolov8s_car.py checkpoint --show-dir show_results
 ```
 
 ## Project Structure
