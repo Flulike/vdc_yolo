@@ -2,7 +2,7 @@
 
 This repository contains the implementation code for the paper "Vehicle Detection in CCTV with Global-Guided Self-Attention and Convolution". The proposed GGMix block enhances vehicle detection performance in CCTV scenarios by combining global guidance mechanisms with self-attention and convolution operations.
 
-## 🚗 Overview
+## Overview
 
 This project extends the MMYOLO framework to implement a novel architecture for vehicle detection in CCTV footage. The core contribution is the **GGMix block**, which integrates:
 
@@ -11,7 +11,7 @@ This project extends the MMYOLO framework to implement a novel architecture for 
 - **Depthwise Separable Convolution**: Efficient spatial feature processing
 - **Flow Warping**: Dynamic feature alignment based on learned offsets
 
-## 🏗️ Architecture
+## Architecture
 
 The GGMix block is implemented in `mmyolo/models/backbones/base_backbone.py` and consists of several key components:
 
@@ -26,7 +26,7 @@ The GGMix block is implemented in `mmyolo/models/backbones/base_backbone.py` and
 Input Image → Backbone (YOLOv8CSPDarknet) → GGMix Blocks → Neck (YOLOv8PAFPN) → Head (YOLOv8Head) → Output
 ```
 
-## 📋 Requirements
+## Requirements
 
 ### Environment Setup
 This project is based on MMYOLO. Please refer to the [MMYOLO installation guide](https://github.com/open-mmlab/mmyolo) for detailed setup instructions.
@@ -55,7 +55,7 @@ pip install fairscale
 pip install timm
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Installation
 1. Clone this repository:
@@ -88,7 +88,7 @@ CUDA_VISIBLE_DEVICES=0 python tools/train.py own/yolov8s_car.py
 python tools/test.py own/yolov8s_car.py  checkpoint --show-dir show_results
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 vdv_yolo/
@@ -108,7 +108,7 @@ vdv_yolo/
 └── README.md
 ```
 
-## 🔧 Configuration
+## Configuration
 
 The main configuration file `own/yolov8s_car.py` contains:
 - Model architecture settings (YOLOv8 with GGMix blocks)
@@ -129,14 +129,14 @@ model = dict(
 )
 ```
 
-## 📊 Performance
+## Performance
 
 The GGMix block enhances vehicle detection performance by:
 - Improving global context understanding
 - Reducing false positives in complex CCTV scenarios
 - Maintaining computational efficiency through depthwise separable convolutions
 
-## 🎯 Key Features
+## Key Features
 
 ### GGMix Block Advantages
 1. **Global Guidance**: Incorporates global image context for better feature representation
@@ -150,33 +150,33 @@ The GGMix block enhances vehicle detection performance by:
 - Channel and spatial attention mechanisms
 - Residual connections for stable training
 
-## 📝 Citation
+## Citation
 
 If you use this code in your research, please cite our paper:
 ```bibtex
 @article{your_paper,
     title={Vehicle Detection in CCTV with Global-Guided Self-Attention and Convolution},
-    author={Your Name and Co-authors},
-    journal={Your Journal/Conference},
-    year={2024}
+    author={xxx},
+    journal={xxx},
+    year={2025}
 }
 ```
 
-## 🤝 Acknowledgments
+## Acknowledgments
 
 This project is built upon the excellent [MMYOLO](https://github.com/open-mmlab/mmyolo) framework by OpenMMLab. We thank the MMYOLO team for providing such a comprehensive and flexible codebase.
 
-## 📄 License
+## License
 
 This project follows the same license as MMYOLO (GPL-3.0). Please refer to the LICENSE file for details.
 
-## 🔗 Related Projects
+## Related Projects
 
 - [MMYOLO](https://github.com/open-mmlab/mmyolo): OpenMMLab YOLO series toolbox and benchmark
 - [MMDetection](https://github.com/open-mmlab/mmdetection): OpenMMLab detection toolbox and benchmark
 - [MMCV](https://github.com/open-mmlab/mmcv): OpenMMLab foundational library for computer vision
 
-## 📞 Contact
+## Contact
 
 For questions and issues, please:
 1. Check the [MMYOLO documentation](https://mmyolo.readthedocs.io/)
