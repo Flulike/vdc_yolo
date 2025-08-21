@@ -76,25 +76,16 @@ Train the model using the provided configuration:
 python tools/train.py own/yolov8s_car.py
 ```
 
-### Training Options
+### Training
 ```bash
 # Train with specific GPU
-python tools/train.py own/yolov8s_car.py --gpu-id 0
-
-# Resume training from checkpoint
-python tools/train.py own/yolov8s_car.py --resume-from <checkpoint_path>
-
-# Train with custom work directory
-python tools/train.py own/yolov8s_car.py --work-dir <your_work_dir>
+CUDA_VISIBLE_DEVICES=0 python tools/train.py own/yolov8s_car.py 
 ```
 
-### Inference
+### Test
 ```bash
 # Single image inference
-python tools/test.py own/yolov8s_car.py <checkpoint_path> --show
-
-# Batch inference
-python tools/test.py own/yolov8s_car.py <checkpoint_path> --show-dir <output_dir>
+python tools/test.py own/yolov8s_car.py  checkpoint --show-dir show_results
 ```
 
 ## 📁 Project Structure
