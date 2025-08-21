@@ -60,7 +60,7 @@ pip install timm
 ### Installation
 1. Clone this repository:
 ```bash
-git clone https://github.com/Flulike/vdv_yolo
+git clone https://github.com/Flulike/vdc_yolo
 cd vdv_yolo
 ```
 
