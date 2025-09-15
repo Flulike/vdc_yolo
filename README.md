@@ -150,10 +150,10 @@ The GGMix block enhances vehicle detection performance by:
 
 If you use this code in your research, please cite our paper:
 ```bibtex
-@article{your_paper,
+@article{guo2025vehicle,
     title={Vehicle Detection in CCTV with Global-Guided Self-Attention and Convolution},
-    author={xxx},
-    journal={xxx},
+    author={Yupei Guo, Yota Yamamoto1, Hideki Yaginuma and Yukinobu Taniguchi},
+    journal={Complex & Intelligent Systems },
     year={2025}
 }
 ```
