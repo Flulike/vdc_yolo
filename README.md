@@ -1,6 +1,7 @@
 # Vehicle Detection in CCTV with Global-Guided Self-Attention and Convolution
 
-This repository contains the implementation code for the paper "Vehicle Detection in CCTV with Global-Guided Self-Attention and Convolution". The proposed GGMix block enhances vehicle detection performance in CCTV scenarios by combining global guidance mechanisms with self-attention and convolution operations.
+This repository contains the implementation code for the paper: [Vehicle Detection in CCTV with Global-Guided Self-Attention and Convolution](https://link.springer.com/article/10.1007/s40747-025-02073-7). 
+The proposed GGMix block enhances vehicle detection performance in CCTV scenarios by combining global guidance mechanisms with self-attention and convolution operations.
 
 ## Overview
 
